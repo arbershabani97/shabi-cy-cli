@@ -1,5 +1,5 @@
 {
-	"name": "shabi-cli",
+	"name": "shabi-cy-cli",
 	"version": "1.0.0",
 	"description": "A React CLI based on my own standards",
 	"main": "index.js",
