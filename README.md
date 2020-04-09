@@ -17,9 +17,9 @@ shabi run-file 7 (not implemented yet)
 shabi cy-file 14 (not implemented yet)
 ```
 
-| Commands |              Functionality              |
-| -------- | :-------------------------------------: |
-| new      |              Create a test              |
-| run      |              Run all tests              |
-| run-file |      Run a Specified Test (ex. 1)       |
-| cy-file  | Run a Specified Test on Cypress (ex. 7) |
+| Commands     |                Functionality                |
+| ------------ | :-----------------------------------------: |
+| ~~new~~      |              ~~Create a test~~              |
+| ~~run~~      |              ~~Run all tests~~              |
+| ~~run-file~~ |      ~~Run a Specified Test (ex. 1)~~       |
+| ~~cy-file~~  | ~~Run a Specified Test on Cypress (ex. 7)~~ |
