@@ -3,13 +3,16 @@ const {importsString, beforeEachString, describeCasesString} = require("../helpe
 const generateString = (id) => String(id).padStart(3, "000");
 
 const content = (classes, tests, runTests, describeCases, itCases) => {
-	return `${importsString(classes, tests)}
-    
-describe("", () => {${beforeEachString(tests, runTests)}
+	const it = `
     it("should do something", () => {
 
     });
-});${describeCasesString(describeCases)}`;
+    `;
+	return `${importsString(classes, tests)}
+    
+describe("", () => {${beforeEachString(tests, runTests)}
+    ${it.repeat(itCases ? itCases : 1)}
+});${describeCasesString(describeCases, itCases)}`;
 };
 module.exports = (name, classes, tests, runTests, describeCases, itCases) => {
 	const [id, Name] = name.split("-");

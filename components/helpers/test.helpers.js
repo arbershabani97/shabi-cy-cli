@@ -17,15 +17,17 @@ const beforeEachString = (tests, runTests) => {
 
 	return `
     beforeEach(() => {${runningTests.join("")}
-    });  
-`;
+    });`;
 };
 const describeCasesString = (describeCases, itCases) => {
 	if (describeCases < 2) return "";
-	const it = `it("should do something", () => {
+	const it = `
+    it("should do something", () => {
 
-    });`;
-	const describe = `describe("", () => {
+    });
+    `;
+	const describe = `
+describe("", () => {
     ${it.repeat(itCases ? itCases : 1)}
 });
 `;
