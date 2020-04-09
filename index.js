@@ -14,11 +14,11 @@ const name = process.argv[3] || "";
 const createNewCypressTest = require("./components/new");
 
 // Components w/ Extras - Classes
-// const createReactClassWithExtras = require("./questions/classes/class");
+const createNewCypressTestWithExtras = require("./questions/new.qa");
 
 let extras = process.argv.find((arg) => arg === "--extra" || arg === "-E");
 if (extras) {
-	// if (type === "new") createReactClassWithExtras(name);
+	if (type === "new") createNewCypressTestWithExtras(name);
 } else {
 	if (type === "new") createNewCypressTest(name);
 }
