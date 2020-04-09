@@ -10,8 +10,8 @@
 ## Options
 
 ```javascript
-shabi new 7-Login (not implemented yet)
-shabi new 8-Register --extra (not implemented yet)
+shabi new 7-Login
+shabi new 8-Register --extra
 shabi run (not implemented yet)
 shabi run-file 7 (not implemented yet)
 shabi cy-file 14 (not implemented yet)
@@ -19,7 +19,7 @@ shabi cy-file 14 (not implemented yet)
 
 | Commands     |                Functionality                |
 | ------------ | :-----------------------------------------: |
-| ~~new~~      |              ~~Create a test~~              |
+| new          |                Create a test                |
 | ~~run~~      |              ~~Run all tests~~              |
 | ~~run-file~~ |      ~~Run a Specified Test (ex. 1)~~       |
 | ~~cy-file~~  | ~~Run a Specified Test on Cypress (ex. 7)~~ |
