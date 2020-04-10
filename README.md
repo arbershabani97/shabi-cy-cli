@@ -1,5 +1,11 @@
 # Shabi Cypress CLI
 
+## Installation
+
+Using [npm](https://www.npmjs.com/):
+
+    $ npm i -g shabi-cy
+
 ## CLI Arguments
 
 -   First Argument - `shabi-cy` - [default]
