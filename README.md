@@ -10,11 +10,11 @@
 ## Options
 
 ```javascript
-shabi new 7-Login
-shabi new 8-Register --extra
-shabi run
-shabi run-test 7
-shabi open-test 14
+shabi-cy new 7-Login
+shabi-cy new 8-Register --extra
+shabi-cy run
+shabi-cy run-test 7
+shabi-cy open-test 14
 ```
 
 | Commands  |             Functionality              |
