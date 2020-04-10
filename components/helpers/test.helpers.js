@@ -3,7 +3,7 @@ const importsString = (classes, tests) => {
 	const renderedClassesInit = classes.map((_class) => `\nconst ${_class} = new ${_class.capitalize()}();`);
 	const renderedTests = tests.map((_test) => {
 		const name = `run${_test.split("_")[0]}Tests`;
-		return `const {${name}} = require("./${_test}");\n`;
+		return `const {${name}} = require("./${_test.slice(0, -3)}");\n`;
 	});
 	return `${renderedClasses.join("")}${renderedTests.join("")}${renderedClassesInit.join("")}`;
 };
@@ -16,6 +16,7 @@ const beforeEachString = (tests, runTests) => {
 	);
 
 	return `
+    
     beforeEach(() => {${runningTests.join("")}
     });`;
 };
