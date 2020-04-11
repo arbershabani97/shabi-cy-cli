@@ -1,7 +1,7 @@
 # Shabi Cypress CLI
 
 A CLI to make your life easier.
-Following this Cypress structure standards.
+Following Cypress structure standards and the following naming convention.
 
 ```
     cypress/

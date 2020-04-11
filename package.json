@@ -1,6 +1,6 @@
 {
 	"name": "shabi-cy",
-	"version": "1.0.1",
+	"version": "1.0.12",
 	"description": "A React CLI based on my own standards",
 	"main": "index.js",
 	"bin": {
