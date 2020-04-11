@@ -3,7 +3,7 @@
 A CLI to make your life easier.
 Following this Cypress structure standards.
 
-```python
+```
     cypress/
         fixtures/
         helpers/
