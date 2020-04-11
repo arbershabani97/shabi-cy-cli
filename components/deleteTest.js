@@ -1,5 +1,4 @@
 const fs = require("fs");
-const {spawn} = require("child_process");
 
 module.exports = (name) => {
 	fs.readdir("cypress/integration", function (err, files) {
