@@ -15,6 +15,7 @@ const createNewCypressTest = require("./components/new");
 const runAllCypressTests = require("./components/runAll");
 const runCypressTest = require("./components/runTest");
 const openCypressTest = require("./components/openTest");
+const deleteCypressTest = require("./components/deleteTest");
 
 // Components w/ Extras - Classes
 const createNewCypressTestWithExtras = require("./questions/new.qa");
@@ -29,3 +30,4 @@ if (extras) {
 if (type === "run") runAllCypressTests();
 if (type === "run-test") runCypressTest(name);
 if (type === "open-test") openCypressTest(name);
+if (type === "delete-test") deleteCypressTest(name);
