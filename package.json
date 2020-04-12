@@ -1,6 +1,6 @@
 {
-	"name": "shabi-cy-cli",
-	"version": "1.0.2",
+	"name": "shabi-cy",
+	"version": "1.0.21",
 	"description": "A Cypress CLI to make your life easier!!",
 	"main": "index.js",
 	"bin": {
