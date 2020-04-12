@@ -20,4 +20,5 @@ module.exports = async () => {
 	if (!_files.find((a) => a.includes("."))) {
 		checkFolder.removeAssets("./cypress/results/assets");
 	}
+	process.exit();
 };
