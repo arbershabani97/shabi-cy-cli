@@ -1,7 +1,7 @@
 {
-	"name": "shabi-cy",
-	"version": "1.0.1",
-	"description": "A React CLI based on my own standards",
+	"name": "shabi-cy-cli",
+	"version": "1.0.2",
+	"description": "A Cypress CLI to make your life easier!!",
 	"main": "index.js",
 	"bin": {
 		"shabi-cy": "./index.js"

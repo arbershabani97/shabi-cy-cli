@@ -21,11 +21,13 @@ shabi-cy new 8-Register --extra
 shabi-cy run
 shabi-cy run-test 7
 shabi-cy open-test 14
+shabi-cy update-reports
 ```
 
-| Commands  |             Functionality              |
-| --------- | :------------------------------------: |
-| new       |             Create a test              |
-| run       |             Run all tests              |
-| run-test  |      Run a Specified Test (ex. 1)      |
-| open-test | Run a Specified Test on Screen (ex. 7) |
+| Commands       |                                                      Functionality                                                       |
+| -------------- | :----------------------------------------------------------------------------------------------------------------------: |
+| new            |                                                      Create a test                                                       |
+| run            |                                                      Run all tests                                                       |
+| run-test       |                                               Run a Specified Test (ex. 1)                                               |
+| open-test      |                                          Run a Specified Test on Screen (ex. 7)                                          |
+| update-reports | The naming of the saved reports is unreadable, so this converts the reports to the test names (also folder names aswell) |

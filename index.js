@@ -10,6 +10,7 @@ String.prototype.capitalize = function () {
 const type = process.argv[2];
 const name = process.argv[3] || "";
 
+const updateReports = require("./conversion/reports");
 // Test Components
 const createNewCypressTest = require("./components/new");
 const runAllCypressTests = require("./components/runAll");
@@ -29,3 +30,4 @@ if (extras) {
 if (type === "run") runAllCypressTests();
 if (type === "run-test") runCypressTest(name);
 if (type === "open-test") openCypressTest(name);
+if (type === "update-reports") updateReports();
