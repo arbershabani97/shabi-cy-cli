@@ -1,14 +1,15 @@
-const fs = require("fs");
+const fs = require("fs").promises;
+const checkFolder = require("../services/folder.service");
 
-module.exports = (name) => {
-	fs.readdir("cypress/integration", function (err, files) {
-		if (err) return console.log("Unable to scan directory: " + err);
-		const existingFile = files.find((file) => Number(file.slice(2, 5)) === Number(name));
-        fs.unlink(`cypress/integration/${existingFile}`, function (err) {
-            if (err) throw err;
-            // if no error, file has been deleted successfully
-            console.log('File deleted!');
-            process.exit();
-        }); 
-	});
+module.exports = async (name) => {
+	checkFolder.components(name);
+	let folder = name.split("/").slice(0, -1).join("/");
+	if (folder) folder = `/${folder}`;
+
+	const files = await fs.readdir(`cypress/integration${folder || ""}`);
+	const existingFile = files.find((file) => Number(file.slice(2, 5)) === Number(name.split("/").pop()));
+	await fs.unlink(`cypress/integration${folder}/${existingFile}`);
+
+	console.log(`${folder}/${existingFile} deleted!`);
+	process.exit();
 };
