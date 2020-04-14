@@ -32,6 +32,21 @@ var copyRecursiveSync = function (src, dest) {
 };
 
 module.exports = {
+	components: (name) => {
+		if (!fs.existsSync("./cypress")) fs.mkdirSync("./cypress");
+		if (!fs.existsSync("./cypress/integration")) fs.mkdirSync("./cypress/integration");
+
+		if (name.includes("/")) {
+			let defaultFolder = "./cypress/integration";
+			const folderNames = name.split("/");
+			folderNames.map((folder, i) => {
+				if (folderNames.length - 1 !== i) {
+					defaultFolder = defaultFolder + "/" + folder;
+					if (!fs.existsSync(defaultFolder)) fs.mkdirSync(defaultFolder);
+				}
+			});
+		}
+	},
 	reports: (name) => {
 		if (!fs.existsSync("./cypress")) fs.mkdirSync("./cypress");
 		if (!fs.existsSync("./cypress/results")) fs.mkdirSync("./cypress/results");
